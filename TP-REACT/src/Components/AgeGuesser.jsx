@@ -6,6 +6,10 @@ function AgeGuesser() {
     const [age , setAge] = useState(null);
     const [error , setError] = useState(null);
     const myName = 'Gonzalo';
+    console.log(myName);
+    
+    
+   
 
      useEffect(() => {
          
@@ -31,11 +35,13 @@ function AgeGuesser() {
             <h2>Adivinador de Edad</h2>
             {age !=null ? (
                 <p>La edad estimada para {myName} es:{age}años.</p>
+                
             ) : error ? (
                 <p>Error al obtener la edad: {error}</p>
             ) : (
                 <p>Estimando la edad...</p>
-            )};
+            )}
+            <p>La edad es :21</p>
         </div>
     );
 };
